@@ -1,6 +1,11 @@
+Here’s the full `README.md` file with all the problems, including the new **Optimized Shipping Cost Calculation** problem.
+
+---
+
+```markdown
 # Frontend Developer Coding Tasks
 
-Welcome! Below are four coding problems designed to evaluate your problem-solving skills, JavaScript knowledge, and real-world coding abilities. Please read each problem carefully and implement the solutions accordingly. The expected output and examples are provided for each task.
+Welcome! Below are five coding problems designed to evaluate your problem-solving skills, JavaScript knowledge, and real-world coding abilities. Please read each problem carefully and implement the solutions accordingly. The expected output and examples are provided for each task.
 
 ---
 
@@ -9,7 +14,7 @@ Welcome! Below are four coding problems designed to evaluate your problem-solvin
 ### Description:
 Write a function that filters a product list based on multiple criteria (e.g., price range, category, availability).
 - The criteria will be passed as an object.
-- Products should match **all** provided criteria.
+- Products should match *all* provided criteria.
 
 ### Function Signature:
 ```javascript
@@ -72,10 +77,10 @@ console.log(allocateStock(product, orderQuantity));
 
 ### Description:
 Write a function to group customers based on their purchase frequency.
-- Return an object with keys: `"Low"`, `"Medium"`, and `"High"`.
-- `"Low"`: Customers with fewer than 5 orders.
-- `"Medium"`: Customers with 5-10 orders.
-- `"High"`: Customers with more than 10 orders.
+- Return an object with keys: "Low", "Medium", and "High".
+- "Low": Customers with fewer than 5 orders.
+- "Medium": Customers with 5-10 orders.
+- "High": Customers with more than 10 orders.
 
 ### Function Signature:
 ```javascript
@@ -106,8 +111,8 @@ console.log(segmentCustomers(customers));
 
 ### Description:
 Write a function to generate a summary of an order with itemized totals and tax.
-- Each product in the order has a `price` and `quantity`.
-- Calculate the `subtotal`, `tax` (10%), and the `total price`.
+- Each product in the order has a price and quantity.
+- Calculate the subtotal, tax (10%), and the total price.
 
 ### Function Signature:
 ```javascript
@@ -133,9 +138,42 @@ console.log(generateOrderSummary(order));
 
 ---
 
+## Problem 5: Optimized Shipping Cost Calculation
+
+### Description:
+Write a function to calculate shipping costs based on the weight of the cart and shipping zones.
+- Each zone has weight-based pricing slabs.
+- Calculate the shipping cost for the lightest valid slab for the cart's total weight.
+
+### Function Signature:
+```javascript
+function calculateShipping(zones, zoneName, cartWeight) {
+  // Your code here
+}
+```
+
+### Example:
+```javascript
+const zones = {
+  "Zone A": [
+    { maxWeight: 5, price: 50 },
+    { maxWeight: 10, price: 80 },
+    { maxWeight: 20, price: 150 },
+  ],
+};
+
+console.log(calculateShipping(zones, "Zone A", 7));
+// Output: 80
+```
+
+---
+
 ### Instructions:
 1. Implement the solutions for all tasks in JavaScript.
 2. Ensure your code is clean, readable, and handles edge cases.
 3. Submit your solutions in a single file with comments explaining your logic.
 
 Good luck!
+```
+
+Let me know if you need any more edits or additions!
